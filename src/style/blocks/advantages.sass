@@ -4,30 +4,54 @@
 		padding-top: 25px
 	&__title
 		margin-bottom: 40px
+		@include media-breakpoint-down(md)
+			margin-bottom: 8px
 	&__wrapper
 		flex: 1 100%
 		display: flex
 		flex-wrap: wrap
+		max-width: 100%
 	&__content
 		flex: 1
 		margin-right: 138px
+		@include media-breakpoint-down(xl)
+			flex: 1 100%
+			margin-right: 0
+			margin-bottom: 40px
+		@include media-breakpoint-down(md)
+			display: flex
+			flex-direction: column
+			margin-bottom: 30px
 	&__text
 		font-size: 20px
 		line-height: 1.35
 		color: #757887
 		margin-bottom: 50px
+		@include media-breakpoint-down(md)
+			font-size: 12px
+			margin-bottom: 19px
 	&__subtitle
 		margin-bottom: 20px
 		font-size: 29px
 		font-weight: 700
 		line-height: 1
 		color: #fff
+		@include media-breakpoint-down(md)
+			font-size: 18px
+			margin-bottom: 17px
+			order: 1
 	&__list
 		display: grid
 		grid-template-columns: repeat(4,1fr)
 		grid-gap: 40px
 		max-width: 400px
 		margin-bottom: 40px
+		@include media-breakpoint-down(md)
+			overflow: auto
+			overflow-y: hidden
+			max-width: calc(100vw - 15px)
+			order: 2
+			grid-template-columns: repeat(10, 70px)
 		&-item
 			display: flex
 			align-items: center
@@ -41,9 +65,15 @@
 		flex-wrap: wrap
 		max-width: 450px
 		margin-bottom: -38px
+		@include media-breakpoint-down(md)
+			max-width: 280px
+			margin-bottom: 0
 	&__item
 		margin-right: 85px
 		margin-bottom: 38px
+		@include media-breakpoint-down(md)
+			margin-right: 40px
+			margin-bottom: 16px
 		&:nth-child(2n)
 			margin-right: 0
 		&-title
@@ -52,6 +82,9 @@
 			line-height: 1
 			font-weight: 700
 			color: #feed01
+			@include media-breakpoint-down(md)
+				font-size: 22px
+				margin-bottom: 3px
 			sup
 				vertical-align: top
 		&-text
@@ -59,6 +92,8 @@
 			font-size: 21px
 			line-height: 1.35
 			color: #fff
+			@include media-breakpoint-down(md)
+				font-size: 11px
 	&__grid
 		align-self: flex-start
 		display: grid
@@ -66,6 +101,13 @@
 		grid-template-columns: repeat(3,1fr)
 		align-items: stretch
 		grid-gap: 30px 25px
+		@include media-breakpoint-down(xl)
+			flex: 1 100%
+		@include media-breakpoint-down(sm)
+			grid-template-columns: repeat(2,1fr)
+		@include media-breakpoint-down(xs)
+			grid-template-columns: repeat(1,1fr)
+			grid-gap: 16px
 		&-item
 			border-radius: 15px
 			overflow: hidden
