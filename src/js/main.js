@@ -8,6 +8,19 @@ $(function() {
 		freeMode: true
 	});
 
+	function scrollTo(a) {
+		a.click(function(e){
+			var toBlock = $(this).attr('href');
+			e.preventDefault();
+			if ($(window).width() < 1200) {
+				$('.header__main').fadeOut(300);
+			}
+			$('body,html').animate({'scrollTop': $(toBlock).offset().top},450);
+		});
+	}
+	scrollTo($('.header__nav a'));
+	scrollTo($('.scrollto'));
+
 	$('.header__btn').click(function(e) {
 		e.preventDefault();
 		$('body').toggleClass('is-fixed');

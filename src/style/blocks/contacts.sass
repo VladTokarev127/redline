@@ -1,0 +1,124 @@
+.contacts
+	padding-top: 75px
+	padding-bottom: 250px
+	overflow: hidden
+	@include media-breakpoint-down(sm)
+		padding-bottom: 100px
+	&__title
+		margin-bottom: 20px
+	&__wrapper
+		position: relative
+		padding-top: 100px
+		@include media-breakpoint-down(sm)
+			padding-top: 25px
+	&__map
+		width: 110%
+		height: 510px
+		transform: rotate(-2.42deg)
+		position: absolute
+		left: -5%
+		top: 0
+		@include media-breakpoint-down(sm)
+			height: 240px
+	&__block
+		z-index: 9
+		margin-left: auto
+		max-width: 490px
+		width: 100%
+		padding: 33px 60px 66px
+		position: relative
+		@include media-breakpoint-down(sm)
+			padding: 19px 35px 35px 32px
+		&::after
+			position: absolute
+			z-index: -1
+			left: 0
+			top: 0
+			content: ''
+			width: 100%
+			height: 100%
+			background: #212533
+			border: 12px solid #FEED01
+			transform: skewX(-2.42deg)
+			@include media-breakpoint-down(sm)
+				border: 7.15102px solid #FEED01
+		&-title
+			font-size: 32px
+			line-height: 1.1
+			font-weight: 700
+			color: #fff
+			margin-bottom: 11px
+			@include media-breakpoint-down(sm)
+				font-size: 19px
+				margin-bottom: 6px
+	&__address
+		font-size: 16px
+		line-height: 1.1
+		font-weight: 500
+		color: #fff
+		margin-bottom: 16px
+		@include media-breakpoint-down(sm)
+			font-size: 12px
+			margin-bottom: 10px
+	&__tel
+		font-size: 20px
+		line-height: 1.1
+		font-weight: 700
+		margin-bottom: 4px
+		@include media-breakpoint-down(sm)
+			margin-bottom: 3px
+			font-size: 14px
+		a
+			color: #fff
+			text-decoration: none
+			transition: $transition
+			&:hover,
+			&:focus-visible
+				color: #feed01
+	&__reg
+		font-size: 14px
+		line-height: 1.1
+		font-weight: 500
+		color: #fff
+		margin-bottom: 26px
+		@include media-breakpoint-down(sm)
+			font-size: 12px
+			margin-bottom: 15px
+	&__subtitle
+		font-size: 20px
+		line-height: 1.1
+		font-weight: 700
+		color: #fff
+		margin-bottom: 11px
+		@include media-breakpoint-down(sm)
+			font-size: 14px
+			margin-bottom: 6px
+	&__soc
+		display: flex
+		flex-wrap: wrap
+		a
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			text-decoration: none
+			transition: $transition
+			width: 40px
+			height: 40px
+			margin-right: 12px
+			border-radius: 50%
+			background-color: #a8aab8
+			font-size: 0
+			@include media-breakpoint-down(sm)
+				width: 27px
+				height: 27px
+				margin-right: 7px
+				padding: 5px
+			img
+				max-width: 100%
+				max-height: 100%
+				height: auto
+				width: auto
+				object-fit: contain
+			&:last-child
+				margin-right: 0
