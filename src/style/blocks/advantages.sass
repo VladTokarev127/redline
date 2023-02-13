@@ -1,0 +1,85 @@
+.advantages
+	padding-top: 75px
+	@include media-breakpoint-down(md)
+		padding-top: 25px
+	&__title
+		margin-bottom: 40px
+	&__wrapper
+		flex: 1 100%
+		display: flex
+		flex-wrap: wrap
+	&__content
+		flex: 1
+		margin-right: 138px
+	&__text
+		font-size: 20px
+		line-height: 1.35
+		color: #757887
+		margin-bottom: 50px
+	&__subtitle
+		margin-bottom: 20px
+		font-size: 29px
+		font-weight: 700
+		line-height: 1
+		color: #fff
+	&__list
+		display: grid
+		grid-template-columns: repeat(4,1fr)
+		grid-gap: 40px
+		max-width: 400px
+		margin-bottom: 40px
+		&-item
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			img
+				max-width: 100%
+				height: auto
+	&__items
+		display: flex
+		flex-wrap: wrap
+		max-width: 450px
+		margin-bottom: -38px
+	&__item
+		margin-right: 85px
+		margin-bottom: 38px
+		&:nth-child(2n)
+			margin-right: 0
+		&-title
+			margin-bottom: 8px
+			font-size: 48px
+			line-height: 1
+			font-weight: 700
+			color: #feed01
+			sup
+				vertical-align: top
+		&-text
+			font-weight: 500
+			font-size: 21px
+			line-height: 1.35
+			color: #fff
+	&__grid
+		align-self: flex-start
+		display: grid
+		flex: 0 835px
+		grid-template-columns: repeat(3,1fr)
+		align-items: stretch
+		grid-gap: 30px 25px
+		&-item
+			border-radius: 15px
+			overflow: hidden
+			background-color: #212533
+		&-bg
+			height: 191px
+			border-radius: 15px
+			overflow: hidden
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&-text
+			padding: 14px 34px 12px 12px
+			font-size: 16px
+			line-height: 1.3
+			color: #fff
