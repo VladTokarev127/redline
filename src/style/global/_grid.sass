@@ -62,6 +62,8 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+	&.is-fixed
+		overflow: hidden
 
 h1,h2,h3,h4,h5,h6
 	font-size: 1em
@@ -70,3 +72,40 @@ h1,h2,h3,h4,h5,h6
 
 .container
 	display: flex
+	flex-wrap: wrap
+	align-items: center
+	max-width: 1470px
+	margin: 0 auto
+	padding: 0 15px
+
+.wrapper
+	background-color: #383c4e
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+
+.main
+	flex: 1
+
+.btn
+	padding: 16px 38px
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	text-decoration: none
+	transition: $transition
+	border: 0
+	cursor: pointer
+	background-color: #feed01
+	border-radius: 5px
+	font-weight: 500
+	font-size: 18px
+	font-family: inherit
+	color: #000
+	&:hover,
+	&:focus-visible
+		opacity: 0.8
+	@include media-breakpoint-down(md)
+		padding: 10px 25px
+		font-size: 12px

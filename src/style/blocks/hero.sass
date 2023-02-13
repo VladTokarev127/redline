@@ -1,0 +1,138 @@
+.hero
+	padding-top: 44px
+	@include media-breakpoint-down(lg)
+		padding-top: 0
+	&__swiper
+		&-container
+			width: 100%
+			background-color: #212533
+			border-radius: 15px
+			overflow: hidden
+		&-slide
+			display: flex
+			align-items: center
+			justify-content: space-between
+			min-height: 590px
+			overflow: hidden
+			@include media-breakpoint-down(md)
+				min-height: 0
+				padding: 20px 15px 15px
+		&-content
+			margin-left: 55px
+			flex: 0 550px
+			margin-right: auto
+			@include media-breakpoint-down(md)
+				max-width: 100%
+				flex: 1 100%
+				margin-left: 0
+				margin-right: 0
+		&-title
+			font-size: 45px
+			font-weight: 700
+			line-height: 1.1
+			color: #fff
+			margin-bottom: 34px
+			@include media-breakpoint-down(md)
+				font-size: 25px
+				margin-bottom: 20px
+		&-text
+			font-size: 22.2686px
+			line-height: 130%
+			color: #fff
+			margin-bottom: 40px
+			@include media-breakpoint-down(md)
+				font-size: 14px
+				margin-bottom: 22px
+			b,strong
+				font-weight: 600
+			b
+				color: #feed01
+			p
+				margin: 0
+				margin-bottom: 29px
+				&:last-child
+					margin-bottom: 0
+		&-alert
+			height: 36px
+			padding: 0 18px
+			display: inline-flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			font-weight: 700
+			font-size: 24px
+			line-height: 1.3
+			background-color: #fff
+			border-radius: 5px
+			margin-bottom: 40px
+			@include media-breakpoint-down(md)
+				margin-bottom: 25px
+				height: 20px
+				padding: 0 9px
+				font-size: 14px
+		&-img_mobile
+			display: none
+			@include media-breakpoint-down(md)
+				display: block
+				width: calc(100% + 15px)
+		&-row
+			display: flex
+			align-items: center
+			margin-bottom: 40px
+			max-width: 460px
+			@include media-breakpoint-down(md)
+				margin-top: -13px
+				max-width: 320px
+				margin-bottom: 25px
+		&-icon
+			max-width: 48px
+			min-width: 48px
+			font-size: 0
+			line-height: 0
+			margin-right: 23px
+			@include media-breakpoint-down(md)
+				max-width: 31px
+				min-width: 31px
+				margin-right: 13px
+			img
+				width: 100%
+				height: auto
+		&-subtext
+			font-size: 20px
+			line-height: 1.3
+			color: #fff
+			@include media-breakpoint-down(md)
+				font-size: 14px
+		&-btn
+			@include media-breakpoint-down(xs)
+				display: flex
+				max-width: 190px
+				margin-left: auto
+				margin-right: auto
+		&-img
+			font-size: 0
+			line-height: 0
+	&__img
+		&-wrapper
+			flex: 0 auto
+			@include media-breakpoint-down(md)
+				display: none
+			img
+				max-width: 100%
+				height: auto
+			&_with-text
+				padding-right: 83px
+				margin-bottom: -60px
+				@include media-breakpoint-down(lg)
+					margin-right: 15px
+					margin-bottom: 0
+		&-text
+			margin-bottom: 65px
+			font-weight: 700
+			font-size: 31.7977px
+			line-height: 89.5%
+			color: #fff
+			b
+				font-size: 34px
+				font-weight: 700
+				color: #feed01
