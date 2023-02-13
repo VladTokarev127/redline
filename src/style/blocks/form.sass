@@ -1,0 +1,89 @@
+.form
+	padding-top: 66px
+	@include media-breakpoint-down(lg)
+		padding-top: 40px
+	&__title
+		margin-bottom: 63px
+		@include media-breakpoint-down(lg)
+			margin-bottom: 20px
+	&__wrapper
+		background-color: #212533
+		padding-top: 43px
+		padding-bottom: 49px
+		@include media-breakpoint-down(lg)
+			padding-top: 14px
+			padding-bottom: 26px
+	&__block
+		max-width: 698px
+		margin: 0 auto
+		width: 100%
+		display: grid
+		grid-template-columns: repeat(2,1fr)
+		grid-gap: 32px
+		@include media-breakpoint-down(sm)
+			grid-gap: 15px
+	&__input
+		margin-bottom: 19px
+		display: flex
+		flex-direction: column
+		&_file
+			height: 100%
+		&:last-child
+			margin-bottom: 0
+		input,
+		textarea
+			background-color: #494d5a
+			height: 38px
+			font-size: 18px
+			font-family: inherit
+			color: #fff
+			padding: 10px
+			border: 0
+			width: 100%
+			border-radius: 5px
+			@include media-breakpoint-down(sm)
+				height: 20px
+				font-size: 16px
+		textarea
+			resize: none
+			height: 120px
+			@include media-breakpoint-down(sm)
+				height: 54px
+	&__label
+		font-size: 24px
+		line-height: 1.1
+		font-weight: 300
+		font-family: inherit
+		color: #fff
+		margin-bottom: 12px
+		display: block
+		@include media-breakpoint-down(sm)
+			margin-bottom: 5px
+			font-size: 13px
+	&__file
+		flex: 1
+		canvas
+			max-width: 100%
+			height: auto
+			@include media-breakpoint-down(sm)
+				height: 40px
+				max-width: 50%
+		.wrapper
+			background: 0
+			min-height: 0
+		.file-name
+			color: #fff
+			@include media-breakpoint-down(sm)
+				font-size: 12px
+		.drop-zone
+			height: 100%
+			margin: 0
+			width: auto
+			padding: 10px
+			border: 0
+			border-radius: 5px
+			background-color: #494d5a
+			@include media-breakpoint-down(sm)
+				padding: 5px
+	&__btn
+		grid-column: 1 / 3
